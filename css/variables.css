@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  --bg: #08070d;
+  --surface: #111019;
+  --surface-raised: #171522;
+  --text: #f6f3fb;
+  --muted: #aaa5b9;
+  --line: rgba(255,255,255,.12);
+  --pink: #ff5ac8;
+  --violet: #8d6bff;
+  --lime: #c8ff76;
+  --gradient: linear-gradient(115deg, #665dff 0%, #a45df2 48%, #ff58c8 100%);
+  --font-body: "Manrope", system-ui, sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --container: 1160px;
+  --radius: 22px;
+}

@@ -1,0 +1,113 @@
+@media (max-width: 1100px) {
+  .showcase { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-card { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); }
+  .about-card, .tile-feature, .tile-image, .tile-cta { grid-column: auto; min-height: 220px; }
+}
+
+@media (max-width: 860px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+    gap: 32px;
+  }
+  .hero-visual {
+    min-height: 380px;
+    padding: 16px 0;
+  }
+  .portrait-stage {
+    width: min(100%, 300px);
+  }
+  .badge-top-left {
+    top: 6px;
+    left: 0;
+  }
+  .badge-bottom-right {
+    bottom: 6px;
+    right: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .container { width: min(var(--container), calc(100% - 32px)); }
+  .header-inner { min-height: 66px; }
+  .menu-toggle { width: 42px; height: 42px; display: grid; align-content: center; justify-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--text); }
+  .menu-toggle span:not(.sr-only) { width: 17px; height: 1.5px; background: currentColor; }
+  .primary-nav { position: absolute; top: calc(100% + 1px); left: 0; right: 0; display: none; padding: 18px 20px 22px; background: #0d0b13; border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; }
+  .primary-nav.is-open { display: flex; }
+  .primary-nav a { padding: 13px 4px; }
+  .primary-nav .nav-contact { margin-top: 8px; padding-inline: 14px; text-align: center; }
+  .showcase-wrap { padding: 14px 8px 30px; }
+  .showcase { padding: 8px; border-radius: 22px; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .hero-card {
+    padding: 24px 18px 22px;
+    border-radius: 18px;
+    gap: 24px;
+  }
+  .hero-status-strip { margin-bottom: 16px; }
+  .hero-copy h1 { font-size: clamp(2.35rem, 10vw, 3.4rem); line-height: 1.05; }
+  .hero-description { font-size: .86rem; }
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 10px; margin-top: 22px; }
+  .hero-actions .button { width: 100%; justify-content: center; }
+  .hero-metrics-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 24px; padding-top: 18px; }
+  .metric-card { padding: 10px 8px; text-align: center; }
+  .metric-number { font-size: 1.18rem; }
+  .metric-label { font-size: .58rem; }
+  .hero-social-bar { gap: 8px; margin-top: 20px; }
+  .social-chip { padding: 5px 10px; font-size: .68rem; }
+  .hero-visual {
+    flex-direction: column;
+    min-height: auto;
+    padding: 10px 0;
+    gap: 12px;
+  }
+  .floating-badge {
+    position: static;
+    width: min(100%, 280px);
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+  .portrait-stage { width: min(100%, 280px); }
+  .about-card, .tile-feature, .tile-image, .tile-cta {
+    grid-column: 1;
+    padding: 22px 18px;
+    min-height: auto;
+  }
+  .tile-image > img { height: 210px; }
+  .section { padding: 68px 0; }
+  .section-heading { display: block; margin-bottom: 25px; }
+  .section-heading > p { margin-top: 18px; }
+  .service-grid, .work-grid { grid-template-columns: minmax(0, 1fr); }
+  .work-card-wide { grid-column: auto; }
+  .work-image { aspect-ratio: 16 / 9; }
+  .work-image img, .work-card-wide .work-image img { height: 100%; }
+  .service-card p { min-height: 0; }
+  .skills-layout { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .skills-list > div { grid-template-columns: 28px 1fr; gap: 8px 12px; }
+  .skills-list small { grid-column: 2; }
+  .contact-section { padding: 65px 0; }
+  .footer-main, .footer-bottom { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .site-footer nav { gap: 15px; }
+}
+
+@media (max-width: 380px) {
+  .container { width: calc(100% - 24px); }
+  .hero-card { padding: 20px 14px 18px; }
+  .hero-copy h1 { font-size: 2.15rem; }
+  .hero-metrics-strip { grid-template-columns: 1fr; gap: 6px; }
+  .about-card, .tile-feature, .tile-image, .tile-cta { padding: 18px 14px; }
+}
+
+
+@media (max-width: 700px) {
+  .footer-top { grid-template-columns: minmax(0, 1fr); gap: 30px; padding: 34px 0 28px; }
+  .footer-brand > p { max-width: 300px; }
+  .footer-nav-group nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px 20px; }
+  .footer-contact h2 { max-width: 360px; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 11px; padding-top: 16px; }
+  .footer-note { text-align: left; }
+}
+
+@media (max-width: 520px) {
+  .contact-actions { align-items: stretch; flex-direction: column; }
+  .contact-actions .button { width: 100%; justify-content: center; }
+}
